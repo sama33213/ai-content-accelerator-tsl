@@ -115,16 +115,19 @@ const App: React.FC = () => {
                         This Skill Applies to <span className="italic text-indigo-400">Everything</span>
                     </h2>
 
-                    <div className="flex flex-wrap gap-3 mb-8">
+                    <div className="flex gap-2 mb-8 overflow-x-auto pb-2 scrollbar-hide">
                         {[
                             { emoji: "🛒", label: "E-Commerce" },
-                            { emoji: "💼", label: "Service Businesses" },
-                            { emoji: "🎯", label: "Personal Brands" },
+                            { emoji: "💼", label: "Services" },
+                            { emoji: "🎯", label: "Creators" },
                             { emoji: "📱", label: "Social Media" },
                             { emoji: "🏢", label: "Agencies" },
                             { emoji: "🚀", label: "Startups" },
                         ].map((item, i) => (
-                            <span key={i} className="inline-flex items-center gap-2 bg-[#0F0F11] border border-white/10 rounded-full px-4 py-2 text-sm text-white">
+                            <span 
+                                key={i} 
+                                className="inline-flex items-center gap-2 bg-[#0F0F11] border border-white/10 rounded-full px-3 py-1.5 text-sm text-white whitespace-nowrap flex-shrink-0"
+                            >
                                 <span>{item.emoji}</span>
                                 {item.label}
                             </span>

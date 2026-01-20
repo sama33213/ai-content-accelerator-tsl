@@ -295,7 +295,7 @@ const App: React.FC = () => {
                       <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
                       
                      <h2 className="font-serif text-3xl md:text-5xl text-white mb-8">
-                        The difference? <span className="text-indigo-400 italic">Technique</span>.
+                        Your competitors make <span className="text-red-500 line-through decoration-red-500/50 decoration-4 italic">Slop</span>. You won't.
                      </h2>
 
                       <div className="bg-[#0F0F11] border border-white/5 rounded-[2rem] p-6 md:p-12 relative overflow-hidden">

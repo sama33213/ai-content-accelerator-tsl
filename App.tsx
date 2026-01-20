@@ -753,11 +753,11 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-3 select-none group">
                 <span className="text-base md:text-lg font-semibold tracking-tight text-white/90 group-hover:text-white transition-colors">
-                    AI Content <span className="bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text text-transparent">Acceleration</span>
+                    AI Content <span className="bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text text-transparent">Masterclass</span>
                 </span>
             </div>
             <div className="text-xs text-gray-600">
-                &copy; 2026 AI Content Acceleration. All rights reserved.
+                &copy; 2026 AI Content Masterclass. All rights reserved.
             </div>
             <div className="flex gap-6 text-sm text-gray-500">
                 <a href="#" className="hover:text-white">Terms</a>

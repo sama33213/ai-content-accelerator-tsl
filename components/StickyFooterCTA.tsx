@@ -28,7 +28,7 @@ export const StickyFooterCTA: React.FC = () => {
                 <div className="flex items-center gap-2">
                      <span className="hidden md:flex w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
                      <span className="text-white font-bold text-sm md:text-base whitespace-nowrap">
-                        Join The Accelerator
+                        Join The Masterclass
                     </span>
                 </div>
                 

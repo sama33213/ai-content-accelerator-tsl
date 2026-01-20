@@ -107,51 +107,34 @@ const App: React.FC = () => {
                      </p>
                  </div>
 
-                 {/* 4. THE UNIVERSAL APPLICATION */}
-                 <div className="max-w-4xl relative">
-                     <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
+                {/* 4. THE UNIVERSAL APPLICATION */}
+                <div className="max-w-4xl relative">
+                    <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
 
-                     <h2 className="font-serif text-3xl md:text-5xl text-white mb-8">
-                         This Skill Applies to <span className="italic text-indigo-400">Everything</span>
-                     </h2>
+                    <h2 className="font-serif text-3xl md:text-5xl text-white mb-6">
+                        This Skill Applies to <span className="italic text-indigo-400">Everything</span>
+                    </h2>
 
-                     <div className="grid md:grid-cols-3 gap-4 mb-8">
-                         <div className="bg-[#0F0F11] border border-white/5 rounded-2xl p-6">
-                             <div className="text-2xl mb-3">🛒</div>
-                             <h4 className="font-bold text-white mb-2">E-Commerce</h4>
-                             <p className="text-sm text-gray-500">Product demos, UGC ads, testimonials. All without hiring a single creator.</p>
-                         </div>
-                         <div className="bg-[#0F0F11] border border-white/5 rounded-2xl p-6">
-                             <div className="text-2xl mb-3">💼</div>
-                             <h4 className="font-bold text-white mb-2">Service Businesses</h4>
-                             <p className="text-sm text-gray-500">Explainer videos, case studies, lead magnets that build trust at scale.</p>
-                         </div>
-                         <div className="bg-[#0F0F11] border border-white/5 rounded-2xl p-6">
-                             <div className="text-2xl mb-3">🎯</div>
-                             <h4 className="font-bold text-white mb-2">Personal Brands</h4>
-                             <p className="text-sm text-gray-500">10x your content output. Never run out of ideas. Stay omnipresent.</p>
-                         </div>
-                         <div className="bg-[#0F0F11] border border-white/5 rounded-2xl p-6">
-                             <div className="text-2xl mb-3">📱</div>
-                             <h4 className="font-bold text-white mb-2">Social Media</h4>
-                             <p className="text-sm text-gray-500">Viral content on demand. TikTok, Reels, Shorts. Dominate every platform.</p>
-                         </div>
-                         <div className="bg-[#0F0F11] border border-white/5 rounded-2xl p-6">
-                             <div className="text-2xl mb-3">🏢</div>
-                             <h4 className="font-bold text-white mb-2">Agencies</h4>
-                             <p className="text-sm text-gray-500">Deliver more value with less overhead. Margins that were impossible before.</p>
-                         </div>
-                         <div className="bg-[#0F0F11] border border-white/5 rounded-2xl p-6">
-                             <div className="text-2xl mb-3">🚀</div>
-                             <h4 className="font-bold text-white mb-2">Startups</h4>
-                             <p className="text-sm text-gray-500">Compete with funded competitors. Marketing punch above your weight class.</p>
-                         </div>
-                     </div>
+                    <div className="flex flex-wrap gap-3 mb-8">
+                        {[
+                            { emoji: "🛒", label: "E-Commerce" },
+                            { emoji: "💼", label: "Service Businesses" },
+                            { emoji: "🎯", label: "Personal Brands" },
+                            { emoji: "📱", label: "Social Media" },
+                            { emoji: "🏢", label: "Agencies" },
+                            { emoji: "🚀", label: "Startups" },
+                        ].map((item, i) => (
+                            <span key={i} className="inline-flex items-center gap-2 bg-[#0F0F11] border border-white/10 rounded-full px-4 py-2 text-sm text-white">
+                                <span>{item.emoji}</span>
+                                {item.label}
+                            </span>
+                        ))}
+                    </div>
 
-                     <p className="text-xl text-gray-400 leading-relaxed max-w-2xl">
-                        The common thread is simple. <span className="text-white font-bold">Every single one of these needs content</span>. And the ones who can produce it faster, cheaper, and at higher volume are going to win.
-                     </p>
-                 </div>
+                    <p className="text-xl text-gray-400 leading-relaxed max-w-2xl">
+                       <span className="text-white font-bold">Every single one needs content</span>. The ones who produce it faster, cheaper, and at higher volume win.
+                    </p>
+                </div>
 
                  {/* 5. TRANSITION TO BIZOPP */}
                  <div className="max-w-2xl">

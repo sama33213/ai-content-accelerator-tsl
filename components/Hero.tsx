@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Button } from './Button';
 
 const CARDS = [
@@ -9,7 +9,6 @@ const CARDS = [
   },
   {
     title: "Yerba Magic UGC",
-    // Replace this URL with your local video file path (e.g., "/videos/yerba-magic.mp4")
     video: "/9c6c7ed0-963f-4139-80b6-18c11fbf714e.mp4",
     overlay: "from-pink-500/10 to-transparent"
   },
@@ -44,6 +43,69 @@ const CARDS = [
     overlay: "from-cyan-500/10 to-transparent"
   }
 ];
+
+// Lazy loading video component with Intersection Observer
+const LazyVideo: React.FC<{ src: string; delay?: number }> = ({ src, delay = 0 }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Add a small delay to stagger loading
+          setTimeout(() => setIsVisible(true), delay);
+          observer.disconnect();
+        }
+      },
+      { 
+        rootMargin: '100px', // Start loading slightly before visible
+        threshold: 0.1 
+      }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [delay]);
+
+  useEffect(() => {
+    if (isVisible && videoRef.current) {
+      videoRef.current.load();
+      videoRef.current.play().catch(() => {
+        // Autoplay might be blocked, that's ok
+      });
+    }
+  }, [isVisible]);
+
+  return (
+    <div ref={containerRef} className="absolute inset-0">
+      {isVisible && (
+        <video
+          ref={videoRef}
+          src={src}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          onLoadedData={() => setIsLoaded(true)}
+          className={`absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none transition-opacity duration-500 ${
+            isLoaded ? 'opacity-80' : 'opacity-0'
+          }`}
+        />
+      )}
+      {/* Loading placeholder */}
+      {!isLoaded && (
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 animate-pulse" />
+      )}
+    </div>
+  );
+};
 
 export const Hero: React.FC = () => {
   return (
@@ -87,16 +149,12 @@ export const Hero: React.FC = () => {
             <div className="absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-[#050505] to-transparent z-20 pointer-events-none"></div>
 
             <div className="flex gap-6 animate-marquee w-max">
-                {/* Quadruple the items to ensure smooth loop on wide screens */}
-                {[...CARDS, ...CARDS, ...CARDS, ...CARDS].map((card, i) => (
+                {/* Duplicate items for smooth loop - reduced from 4x to 2x for faster loading */}
+                {[...CARDS, ...CARDS].map((card, i) => (
                     <div key={i} className="relative w-[200px] md:w-[280px] aspect-[9/16] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-white/10 flex-shrink-0 bg-[#0F0F11]">
-                         <video 
+                         <LazyVideo 
                             src={card.video} 
-                            autoPlay 
-                            loop 
-                            muted 
-                            playsInline
-                            className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none" 
+                            delay={(i % CARDS.length) * 100} // Stagger loading by 100ms per unique video
                          />
                          <div className={`absolute inset-0 bg-gradient-to-br ${card.overlay} mix-blend-overlay pointer-events-none`}></div>
                     </div>

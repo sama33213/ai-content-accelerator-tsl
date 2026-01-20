@@ -37,9 +37,9 @@ export const Navbar: React.FC = () => {
     >
         <nav className="bg-[#0F0F11]/90 backdrop-blur-2xl border border-white/10 rounded-full pl-3 pr-3 py-2 md:pl-4 md:pr-2 flex items-center justify-between gap-4 md:gap-6 shadow-2xl shadow-black/80 w-full max-w-4xl transition-all duration-300 hover:border-white/20 ring-1 ring-white/5">
             {/* Logo Section */}
-            <div className="flex items-center gap-3 pl-1 cursor-pointer group shrink-0" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                <span className="font-serif text-lg md:text-xl font-bold tracking-tight text-white group-hover:text-indigo-200 transition-colors drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
-                    AI Content <span className="text-indigo-400 italic">Accelerator</span>
+            <div className="flex items-center pl-1 cursor-pointer group shrink-0" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <span className="text-base md:text-lg font-semibold tracking-tight text-white group-hover:text-white transition-colors">
+                    AI Content <span className="bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text text-transparent">Acceleration</span>
                 </span>
             </div>
             

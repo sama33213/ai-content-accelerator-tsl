@@ -81,7 +81,7 @@ export const Curriculum: React.FC = () => {
                 What you will <span className="italic text-indigo-400">master</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                This isn't random YouTube tutorials. This is a complete system—from production skills to monetization strategies.
+                This isn't random YouTube tutorials. This is a complete system, from production skills to monetization strategies.
             </p>
         </div>
 

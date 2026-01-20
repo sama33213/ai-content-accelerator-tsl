@@ -99,7 +99,7 @@ export const Hero: React.FC = () => {
               <Button onClick={() => document.getElementById('manifesto')?.scrollIntoView({behavior: 'smooth'})} className="px-10 py-4 text-lg">
                 Read The Manifesto
               </Button>
-              <Button variant="secondary" className="px-8 py-4 text-lg" onClick={() => window.open('https://whop.com/aicontentmoney/ai-content-accelerator-ed/?utm_source=store_page&funnelId=store_1e97cd60-f0b6-4606-b7e2-efd657cb5a03', '_blank')}>
+              <Button variant="secondary" className="px-8 py-4 text-lg" onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
                 Get The Training
               </Button>
             </div>

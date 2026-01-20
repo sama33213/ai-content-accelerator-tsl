@@ -49,12 +49,12 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/* Desktop Button */}
-            <Button className="hidden md:flex py-2.5 px-6 text-sm h-auto bg-white text-black hover:bg-gray-200 border-none shadow-[0_0_20px_-5px_rgba(255,255,255,0.4)] rounded-full font-bold tracking-tight shrink-0" onClick={() => window.open('https://whop.com/aicontentmoney/ai-content-accelerator-ed/?utm_source=store_page&funnelId=store_1e97cd60-f0b6-4606-b7e2-efd657cb5a03', '_blank')}>
+            <Button className="hidden md:flex py-2.5 px-6 text-sm h-auto bg-white text-black hover:bg-gray-200 border-none shadow-[0_0_20px_-5px_rgba(255,255,255,0.4)] rounded-full font-bold tracking-tight shrink-0" onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
                 Join Now
             </Button>
             
             {/* Mobile Join Button */}
-            <Button className="md:hidden py-2 px-5 text-xs h-auto bg-white text-black rounded-full font-bold shrink-0" onClick={() => window.open('https://whop.com/aicontentmoney/ai-content-accelerator-ed/?utm_source=store_page&funnelId=store_1e97cd60-f0b6-4606-b7e2-efd657cb5a03', '_blank')}>
+            <Button className="md:hidden py-2 px-5 text-xs h-auto bg-white text-black rounded-full font-bold shrink-0" onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
                 Join
             </Button>
         </nav>

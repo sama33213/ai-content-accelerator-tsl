@@ -45,7 +45,7 @@ export const StickyFooterCTA: React.FC = () => {
             <Button 
                 variant="glow" 
                 className="py-2 px-5 md:py-2.5 md:px-8 text-sm md:text-base whitespace-nowrap shrink-0 shadow-[0_0_20px_rgba(99,102,241,0.4)]"
-                onClick={() => window.open('https://whop.com/aicontentmoney/ai-content-accelerator-ed/?utm_source=store_page&funnelId=store_1e97cd60-f0b6-4606-b7e2-efd657cb5a03', '_blank')}
+                onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}
             >
                 Join Now
             </Button>

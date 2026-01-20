@@ -22,15 +22,12 @@ const App: React.FC = () => {
          
          <div className="max-w-5xl mx-auto px-4 relative z-10">
              
-             {/* THE THREAD: A subtle line connecting the story */}
-             <div className="absolute left-4 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/10 to-transparent hidden md:block"></div>
 
              <div className="space-y-24 md:pl-16">
                  
                  {/* 1. THE HOOK - THE SKILL */}
                  <div id="manifesto" className="scroll-mt-32 max-w-4xl relative">
                      {/* Timeline Bullet */}
-                     <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
                      
                      <p className="font-serif italic text-2xl text-gray-500 mb-6">Dear Friend,</p>
                      
@@ -38,10 +35,10 @@ const App: React.FC = () => {
                         AI Content Gave Me an <br/><span className="text-white border-b-2 border-indigo-500">Unfair Advantage</span>.
                      </h2>
                     <p className="font-serif text-3xl md:text-4xl text-gray-400 mt-6 mb-8">
-                       It Will for You Too.
+                       It Can Do The Same For You Too.
                     </p>
 
-                    <Button onClick={() => window.open('https://whop.com/aicontentmoney/ai-content-accelerator-ed/?utm_source=store_page&funnelId=store_1e97cd60-f0b6-4606-b7e2-efd657cb5a03', '_blank')} className="mb-10">
+                    <Button onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')} className="mb-10">
                        Get The Training
                     </Button>
 
@@ -60,7 +57,6 @@ const App: React.FC = () => {
 
                  {/* 2. THE SHIFT - WHY NOW */}
                  <div className="max-w-4xl relative">
-                     <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
 
                      <h2 className="font-serif text-3xl md:text-5xl text-white mb-8">
                          The Content Game Has <span className="italic text-indigo-400">Changed</span>
@@ -109,7 +105,6 @@ const App: React.FC = () => {
 
                 {/* 4. THE UNIVERSAL APPLICATION */}
                 <div className="max-w-4xl relative">
-                    <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
 
                     <h2 className="font-serif text-3xl md:text-5xl text-white mb-6">
                         This Skill Applies to <span className="italic text-indigo-400">Everything</span>
@@ -153,16 +148,19 @@ const App: React.FC = () => {
                          </p>
                      </div>
                      <p className="text-xl text-gray-400 leading-relaxed mb-6">
-                        That's exactly why I spent 18 months obsessing over this. I wasn't just looking for "pretty videos"—that's just a <span className="text-white font-bold">cool party trick</span> if it doesn't pay the rent. I was looking for <span className="text-green-400 font-bold">leverage</span>.
+                        That's exactly why I spent 18 months obsessing over this. I wasn't just looking for "pretty videos". That's just a <span className="text-white font-bold">cool party trick</span> if it doesn't pay the rent. I was looking for <span className="text-green-400 font-bold">leverage</span>.
                      </p>
-                     <p className="text-xl text-gray-400 leading-relaxed">
+                     <p className="text-xl text-gray-400 leading-relaxed mb-8">
                         There's no point in generating high-quality clips if you don't have a way to cash them in. So I reverse-engineered the market to find the <span className="text-white font-bold">exact pathways</span> where this skill converts directly into revenue:
                      </p>
+
+                     <Button onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
+                        Get The Training
+                     </Button>
                  </div>
 
                  {/* REVENUE MODELS */}
                  <div className="max-w-6xl relative">
-                      <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
 
                       <h2 className="font-serif text-3xl md:text-5xl text-white mb-6">
                           Choose Your <span className="italic text-indigo-400">Path</span>
@@ -287,7 +285,6 @@ const App: React.FC = () => {
 
                  {/* 4. QUALITY OBSESSION - THE REAL CHALLENGE */}
                  <div className="max-w-5xl relative">
-                      <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
                       
                      <h2 className="font-serif text-3xl md:text-5xl text-white mb-8">
                         Your competitors make <span className="text-red-500 line-through decoration-red-500/50 decoration-4 italic">Slop</span>. You won't.
@@ -356,7 +353,6 @@ const App: React.FC = () => {
 
                  {/* 5. THE STRUGGLE - MY STORY */}
                  <div className="max-w-4xl relative">
-                     <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
 
                      {/* The Struggle Block */}
                      <div className="bg-[#0F0F11] border border-white/5 rounded-[2rem] p-6 md:p-12 mb-8 relative overflow-hidden group hover:border-white/10 transition-colors">
@@ -407,7 +403,6 @@ const App: React.FC = () => {
 
                  {/* 6. THE UNFAIR ADVANTAGE */}
                  <div className="max-w-4xl relative">
-                      <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
 
                       <div className="bg-gradient-to-br from-[#1A1A1E] to-[#0F0F11] border border-white/10 rounded-[2rem] p-6 md:p-12 relative overflow-hidden group">
                           <div className="absolute top-0 right-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-overlay"></div>
@@ -444,7 +439,6 @@ const App: React.FC = () => {
 
                  {/* 7. THE ECONOMICS */}
                  <div className="max-w-5xl relative">
-                    <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
                     <ComparisonBox />
                  </div>
 
@@ -457,7 +451,6 @@ const App: React.FC = () => {
 
                  {/* 8. SAAS COMPARISON */}
                  <div className="max-w-5xl relative">
-                      <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
                       
                       <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
                           <h2 className="font-serif text-3xl md:text-4xl text-white">
@@ -538,7 +531,6 @@ const App: React.FC = () => {
 
                  {/* 9. THE OBSESSION - CREDIBILITY */}
                  <div className="max-w-4xl relative">
-                    <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
 
                     <div className="relative bg-[#0F0F11] border border-indigo-500/20 rounded-[2rem] p-6 md:p-12 overflow-hidden group hover:border-indigo-500/30 transition-colors">
                         <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-600/10 blur-[80px] rounded-full pointer-events-none group-hover:bg-indigo-600/15 transition-colors duration-700"></div>
@@ -546,8 +538,7 @@ const App: React.FC = () => {
                         <div className="relative z-10">
                             
                             <h3 className="font-serif text-3xl md:text-5xl text-white mb-8">
-                                I am not a <span className="text-gray-600 line-through decoration-gray-500 decoration-2">Guru</span>. <br/>
-                                I am an <span className="italic text-indigo-400">Obsessive</span>.
+                                I am <span className="italic text-indigo-400">Obsessed</span>.
                             </h3>
 
                             <div className="prose prose-lg prose-invert text-gray-400 leading-relaxed mb-10">
@@ -588,13 +579,12 @@ const App: React.FC = () => {
 
                  {/* 10. THE WINDOW - URGENCY */}
                  <div className="max-w-4xl relative">
-                     <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.5)] hidden md:block"></div>
 
                      <div className="bg-[#0F0F11] border border-red-500/20 rounded-[2rem] p-6 md:p-12 relative overflow-hidden text-center">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-50"></div>
                          
                          <div className="inline-flex items-center gap-2 text-red-400 font-bold uppercase tracking-widest text-xs mb-6">
-                            <Clock className="w-4 h-4" /> Time Sensitive
+                            <Clock className="w-4 h-4" /> Be Warned
                          </div>
                          
                          <h3 className="font-serif text-4xl text-white mb-6">
@@ -614,7 +604,7 @@ const App: React.FC = () => {
              </div>
 
              {/* 8. CURRICULUM & OFFER */}
-             <div className="space-y-32 mt-32">
+             <div className="space-y-32 mt-32 md:pl-16">
                  <Curriculum />
              </div>
 
@@ -719,7 +709,7 @@ const App: React.FC = () => {
                                  </div>
                                  <span className="block text-gray-500 line-through font-serif text-xl mb-1">$997</span>
                                  <span className="block text-6xl font-serif text-white mb-6">$149</span>
-                                 <Button fullWidth variant="primary" onClick={() => window.open('https://whop.com/aicontentmoney/ai-content-accelerator-ed/?utm_source=store_page&funnelId=store_1e97cd60-f0b6-4606-b7e2-efd657cb5a03', '_blank')}>
+                                 <Button fullWidth variant="primary" onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
                                      Get Instant Access
                                  </Button>
                                  <div className="mt-4 flex justify-center items-center gap-2 text-xs text-gray-500">

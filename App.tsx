@@ -280,23 +280,23 @@ const App: React.FC = () => {
                       </div>
                  </div>
 
-                 {/* TRANSITION: BUT THERE'S A CATCH */}
-                 <div className="max-w-2xl">
-                     <p className="text-2xl text-white font-serif italic mb-6">
-                        But there's a catch...
-                     </p>
-                     <p className="text-xl text-gray-400 leading-relaxed">
-                        None of these paths work if your content looks like garbage. And right now, <span className="text-white font-bold">most AI content is garbage</span>.
-                     </p>
-                 </div>
+                {/* TRANSITION: BUT THERE'S A CATCH */}
+                <div className="max-w-2xl">
+                    <p className="text-2xl text-white font-serif italic mb-6">
+                       But here's what most people get wrong...
+                    </p>
+                    <p className="text-xl text-gray-400 leading-relaxed">
+                       AI content only looks bad when you don't know the right techniques. <span className="text-white font-bold">We show you exactly how to make it look incredible</span>.
+                    </p>
+                </div>
 
                  {/* 4. QUALITY OBSESSION - THE REAL CHALLENGE */}
                  <div className="max-w-5xl relative">
                       <div className="absolute -left-[41px] top-0 w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)] hidden md:block"></div>
                       
-                      <h2 className="font-serif text-3xl md:text-5xl text-white mb-8">
-                         Most AI content is <span className="text-red-500 line-through decoration-red-500/50 decoration-4 italic">Slop</span>.
-                      </h2>
+                     <h2 className="font-serif text-3xl md:text-5xl text-white mb-8">
+                        The difference? <span className="text-indigo-400 italic">Technique</span>.
+                     </h2>
 
                       <div className="bg-[#0F0F11] border border-white/5 rounded-[2rem] p-6 md:p-12 relative overflow-hidden">
                         {/* Background glow */}

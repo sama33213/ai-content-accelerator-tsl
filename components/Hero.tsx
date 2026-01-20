@@ -111,10 +111,10 @@ export const Hero: React.FC = () => {
             <div className="absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-[#050505] to-transparent z-20 pointer-events-none"></div>
             <div className="absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-[#050505] to-transparent z-20 pointer-events-none"></div>
 
-            <div className="flex gap-6 animate-marquee w-max">
+            <div className="flex gap-3 md:gap-6 animate-marquee w-max">
                 {/* Duplicate items for smooth loop - reduced from 4x to 2x for faster loading */}
                 {[...CARDS, ...CARDS].map((card, i) => (
-                    <div key={i} className="relative w-[200px] md:w-[280px] aspect-[9/16] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-white/10 flex-shrink-0 bg-[#0F0F11]">
+                    <div key={i} className="relative w-[140px] md:w-[280px] aspect-[9/16] rounded-xl md:rounded-[2rem] overflow-hidden border border-white/10 flex-shrink-0 bg-[#0F0F11]">
                          <EagerVideo src={card.video} />
                          <div className={`absolute inset-0 bg-gradient-to-br ${card.overlay} mix-blend-overlay pointer-events-none`}></div>
                     </div>

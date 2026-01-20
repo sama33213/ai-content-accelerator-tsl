@@ -37,11 +37,15 @@ const App: React.FC = () => {
                      <h2 className="font-serif text-4xl md:text-6xl leading-tight mb-4">
                         AI Content Gave Me an <br/><span className="text-white border-b-2 border-indigo-500">Unfair Advantage</span>.
                      </h2>
-                     <p className="font-serif text-3xl md:text-4xl text-gray-400 mt-6 mb-8">
-                        It Will for You Too.
-                     </p>
+                    <p className="font-serif text-3xl md:text-4xl text-gray-400 mt-6 mb-8">
+                       It Will for You Too.
+                    </p>
 
-                     <div className="prose prose-invert text-gray-400 leading-relaxed text-xl max-w-2xl">
+                    <Button onClick={() => window.open('https://whop.com/aicontentmoney/ai-content-accelerator-ed/?utm_source=store_page&funnelId=store_1e97cd60-f0b6-4606-b7e2-efd657cb5a03', '_blank')} className="mb-10">
+                       Get The Training
+                    </Button>
+
+                    <div className="prose prose-invert text-gray-400 leading-relaxed text-xl max-w-2xl">
                          <p className="mb-6">
                             I don't care what industry you're in. I don't care if you're running an e-commerce brand, a SaaS company, a personal brand, or if you're just getting started with nothing. <span className="text-white font-medium">None of that matters.</span>
                          </p>

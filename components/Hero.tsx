@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Button } from './Button';
 
 const CARDS = [
@@ -44,61 +44,24 @@ const CARDS = [
   }
 ];
 
-// Lazy loading video component with Intersection Observer
-const LazyVideo: React.FC<{ src: string; delay?: number }> = ({ src, delay = 0 }) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+// Eager loading video component - preloads immediately
+const EagerVideo: React.FC<{ src: string }> = ({ src }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          // Add a small delay to stagger loading
-          setTimeout(() => setIsVisible(true), delay);
-          observer.disconnect();
-        }
-      },
-      { 
-        rootMargin: '100px', // Start loading slightly before visible
-        threshold: 0.1 
-      }
-    );
-
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, [delay]);
-
-  useEffect(() => {
-    if (isVisible && videoRef.current) {
-      videoRef.current.load();
-      videoRef.current.play().catch(() => {
-        // Autoplay might be blocked, that's ok
-      });
-    }
-  }, [isVisible]);
-
   return (
-    <div ref={containerRef} className="absolute inset-0">
-      {isVisible && (
-        <video
-          ref={videoRef}
-          src={src}
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="metadata"
-          onLoadedData={() => setIsLoaded(true)}
-          className={`absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none transition-opacity duration-500 ${
-            isLoaded ? 'opacity-80' : 'opacity-0'
-          }`}
-        />
-      )}
+    <div className="absolute inset-0">
+      <video
+        src={src}
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        onLoadedData={() => setIsLoaded(true)}
+        className={`absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none transition-opacity duration-500 ${
+          isLoaded ? 'opacity-80' : 'opacity-0'
+        }`}
+      />
       {/* Loading placeholder */}
       {!isLoaded && (
         <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 animate-pulse" />
@@ -152,10 +115,7 @@ export const Hero: React.FC = () => {
                 {/* Duplicate items for smooth loop - reduced from 4x to 2x for faster loading */}
                 {[...CARDS, ...CARDS].map((card, i) => (
                     <div key={i} className="relative w-[200px] md:w-[280px] aspect-[9/16] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-white/10 flex-shrink-0 bg-[#0F0F11]">
-                         <LazyVideo 
-                            src={card.video} 
-                            delay={(i % CARDS.length) * 100} // Stagger loading by 100ms per unique video
-                         />
+                         <EagerVideo src={card.video} />
                          <div className={`absolute inset-0 bg-gradient-to-br ${card.overlay} mix-blend-overlay pointer-events-none`}></div>
                     </div>
                 ))}

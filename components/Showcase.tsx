@@ -28,6 +28,7 @@ export const Showcase: React.FC<ShowcaseProps> = ({ label, className = "", image
                     loop
                     muted
                     playsInline
+                    preload="auto"
                     className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
                 />
              ) : image ? (

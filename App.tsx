@@ -151,17 +151,22 @@ const App: React.FC = () => {
 
                  {/* 5. TRANSITION TO BIZOPP */}
                  <div className="max-w-2xl">
-                     <p className="text-xl text-gray-400 leading-relaxed mb-6">
-                        Once you master this skill, doors start opening everywhere. You start seeing opportunities that were invisible before. You realize that the ability to create high-quality AI content on demand is one of the most <span className="text-white font-bold">versatile and valuable skills</span> you can have in 2026.
+                     <p className="text-2xl text-white font-serif italic mb-6">
+                        But I realized something...
                      </p>
                      <p className="text-xl text-gray-400 leading-relaxed mb-6">
-                        I spent 18 months going deep. Not just learning the tools, but figuring out <span className="text-white font-bold">exactly how to turn this skill into real money</span>. I tested everything. I failed a lot. I figured out what actually works.
+                        Sure, if you own a brand, this system will save you thousands on production. That's obvious.
                      </p>
+                     <div className="border-l-2 border-indigo-500/50 pl-6 my-8">
+                         <p className="text-xl text-gray-300 italic">
+                            "What if I don't have a business yet? What if I just want to generate income from scratch?"
+                         </p>
+                     </div>
                      <p className="text-xl text-gray-400 leading-relaxed mb-6">
-                        And I discovered that whether you already have a business or you're starting completely from scratch, this skill opens up <span className="text-green-400 font-bold">multiple paths to generate income</span>.
+                        That's exactly why I spent 18 months obsessing over this. I wasn't just looking for "pretty videos"—that's just a <span className="text-white font-bold">cool party trick</span> if it doesn't pay the rent. I was looking for <span className="text-green-400 font-bold">leverage</span>.
                      </p>
                      <p className="text-xl text-gray-400 leading-relaxed">
-                        After all my testing, I narrowed it down to <span className="text-white font-bold">three proven paths</span> that consistently work:
+                        There's no point in generating high-quality clips if you don't have a way to cash them in. So I reverse-engineered the market to find the <span className="text-white font-bold">exact pathways</span> where this skill converts directly into revenue:
                      </p>
                  </div>
 

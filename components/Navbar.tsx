@@ -39,7 +39,7 @@ export const Navbar: React.FC = () => {
             {/* Logo Section */}
             <div className="flex items-center pl-1 cursor-pointer group shrink-0" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <span className="text-base md:text-lg font-semibold tracking-tight text-white group-hover:text-white transition-colors">
-                    AI Content <span className="bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text text-transparent">Masterclass</span>
+                    AI Content <span className="bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text text-transparent">System</span>
                 </span>
             </div>
             

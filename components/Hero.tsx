@@ -100,7 +100,7 @@ export const Hero: React.FC = () => {
                 Read The Manifesto
               </Button>
               <Button variant="secondary" className="px-8 py-4 text-lg" onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
-                Get The Training
+                Access The System
               </Button>
             </div>
         </div>

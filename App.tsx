@@ -39,7 +39,7 @@ const App: React.FC = () => {
                     </p>
 
                     <Button onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')} className="mb-10">
-                       Get The Training
+                       Access The System
                     </Button>
 
                     <div className="prose prose-invert text-gray-400 leading-relaxed text-xl max-w-2xl">
@@ -155,7 +155,7 @@ const App: React.FC = () => {
                      </p>
 
                      <Button onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
-                        Get The Training
+                        Access The System
                      </Button>
                  </div>
 

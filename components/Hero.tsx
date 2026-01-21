@@ -41,6 +41,16 @@ const CARDS = [
     title: "UGC Ad",
     video: "/smaller video.mp4",
     overlay: "from-cyan-500/10 to-transparent"
+  },
+  {
+    title: "Granny Spills",
+    video: "/grannyspills_1767633213_3803504928463403455_75884123210.mp4",
+    overlay: "from-rose-500/10 to-transparent"
+  },
+  {
+    title: "SnapInsta UGC",
+    video: "/SnapInsta.to_AQMjRvNsKY1inDPQ2Rk44c0Y6C1k3D7pdpSVZYDyE6wTWR32gu1p-tgTYogq4ysKdD1ZeGfpUkZ5FEI-i1DnnInR.mp4",
+    overlay: "from-amber-500/10 to-transparent"
   }
 ];
 

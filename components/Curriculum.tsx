@@ -1,5 +1,5 @@
 import React from 'react';
-import { Video, Image, Mic, Award, Zap, Layers, Terminal, Users, Briefcase, TrendingUp, DollarSign } from 'lucide-react';
+import { Video, Image, Mic, Award, Zap, Layers, Terminal, Users, TrendingUp, DollarSign } from 'lucide-react';
 
 const technicalModules = [
   {
@@ -51,12 +51,6 @@ const businessModules = [
     title: "Launch AI Influencers",
     desc: "Step-by-step system to launch AI personas in proven niches that convert. Find your niche, build your character, and start generating revenue.",
     icon: <Users className="w-5 h-5" />,
-    span: "col-span-1 md:col-span-2"
-  },
-  {
-    title: "Build an AI Content Agency",
-    desc: "How to package your skills, find clients, price your services, and deliver at scale. Complete agency-in-a-box blueprint.",
-    icon: <Briefcase className="w-5 h-5" />,
     span: "col-span-1 md:col-span-2"
   },
   {

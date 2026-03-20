@@ -7,7 +7,7 @@ import { Curriculum } from './components/Curriculum';
 import { Showcase } from './components/Showcase';
 import { FAQ } from './components/FAQ';
 import { StickyFooterCTA } from './components/StickyFooterCTA';
-import { ShieldCheck, Check, Search, TrendingUp, AlertTriangle, Zap, Lock, DollarSign, Users, Briefcase, BarChart3, Clock, ArrowRight, Star, Repeat, Flame, BookOpen } from 'lucide-react';
+import { ShieldCheck, Check, Search, TrendingUp, AlertTriangle, Zap, Lock, DollarSign, Users, BarChart3, Clock, ArrowRight, Star, Repeat, Flame, BookOpen } from 'lucide-react';
 
 const App: React.FC = () => {
   return (
@@ -166,10 +166,10 @@ const App: React.FC = () => {
                           Choose Your <span className="italic text-indigo-400">Path</span>
                       </h2>
                       <p className="text-gray-400 max-w-2xl text-lg leading-relaxed mb-12">
-                          Three proven ways to turn this skill into real money. Pick the one that fits your situation, or combine them.
+                          Two proven ways to turn this skill into real money. Pick the one that fits your situation, or combine them.
                       </p>
 
-                      <div className="grid md:grid-cols-3 gap-6">
+                      <div className="grid md:grid-cols-2 gap-6">
                           {/* Pathway 1: AI Influencer */}
                           <div className="bg-[#0F0F11] border border-white/5 rounded-[2rem] p-8 hover:border-indigo-500/30 transition-all group hover:-translate-y-1 duration-300">
                               <div className="w-14 h-14 bg-[#0A0A0C] rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform shadow-lg shadow-indigo-900/10">
@@ -203,41 +203,7 @@ const App: React.FC = () => {
                               </ul>
                           </div>
 
-                          {/* Pathway 2: The Agency */}
-                          <div className="bg-[#0F0F11] border border-white/5 rounded-[2rem] p-8 hover:border-indigo-500/30 transition-all group hover:-translate-y-1 duration-300 relative overflow-hidden">
-                              <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full blur-3xl pointer-events-none"></div>
-                              <div className="w-14 h-14 bg-[#0A0A0C] rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform shadow-lg shadow-indigo-900/10 relative z-10">
-                                  <Briefcase className="w-7 h-7" />
-                              </div>
-                              
-                              <div className="mb-6 relative z-10">
-                                  <div className="flex items-center justify-between mb-2">
-                                      <h3 className="text-2xl font-bold text-white">AI Content Agency</h3>
-                                  </div>
-                                  <p className="text-xs font-bold text-green-400 uppercase tracking-widest">Service Business</p>
-                              </div>
-
-                              <p className="text-gray-400 text-sm leading-relaxed mb-8 relative z-10">
-                                  Businesses are <span className="text-white font-medium">starving</span> for quality AI content but can't afford $5k/mo agencies. You fill the gap with <span className="text-white font-medium">insane margins</span>.
-                              </p>
-
-                              <ul className="space-y-4 border-t border-white/5 pt-6 relative z-10">
-                                  <li className="flex gap-3 text-sm text-gray-300">
-                                      <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
-                                      <span>Charge $2k/mo, fulfill for <span className="text-white">$50</span></span>
-                                  </li>
-                                  <li className="flex gap-3 text-sm text-gray-300">
-                                      <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
-                                      <span>Replace a 5-person team with 1 laptop</span>
-                                  </li>
-                                  <li className="flex gap-3 text-sm text-gray-300">
-                                      <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
-                                      <span>Scale without hiring</span>
-                                  </li>
-                              </ul>
-                          </div>
-
-                          {/* Pathway 3: Brand Velocity */}
+                          {/* Pathway 2: Brand Velocity */}
                           <div className="bg-gradient-to-b from-[#151518] to-[#0A0A0C] border border-indigo-500/20 rounded-[2rem] p-8 group relative overflow-hidden hover:border-indigo-500/40 transition-all hover:-translate-y-1 duration-300">
                               <div className="absolute top-0 right-0 bg-indigo-600 text-white text-[10px] font-bold px-4 py-1.5 rounded-bl-2xl">FOR OWNERS</div>
                               <div className="w-14 h-14 bg-indigo-500/10 rounded-2xl flex items-center justify-center text-indigo-400 mb-8 group-hover:scale-110 transition-transform shadow-lg shadow-indigo-500/20">
@@ -645,7 +611,7 @@ const App: React.FC = () => {
 
                     <div className="space-y-3 mb-8">
                         <p className="text-gray-400"><span className="text-white">Every major platform:</span> Sora 2, Veo 3, Kling, LTX 2, plus open source alternatives.</p>
-                        <p className="text-gray-400"><span className="text-white">Multiple revenue streams:</span> AI influencers, AI content agency, brand velocity for existing businesses.</p>
+                        <p className="text-gray-400"><span className="text-white">Multiple revenue streams:</span> AI influencers, brand velocity for existing businesses.</p>
                     </div>
 
                     <div className="bg-[#0A0A0C] rounded-xl p-6 mb-8">
@@ -708,7 +674,7 @@ const App: React.FC = () => {
                                      <Clock className="w-3 h-3" /> Price Increasing Soon
                                  </div>
                                  <span className="block text-gray-500 line-through font-serif text-xl mb-1">$997</span>
-                                 <span className="block text-6xl font-serif text-white mb-6">$149</span>
+                                 <span className="block text-6xl font-serif text-white mb-6">$247</span>
                                  <Button fullWidth variant="primary" onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
                                      Get Instant Access
                                  </Button>

@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/x",
+      "destination": "https://whop.com/checkout/ch_cXXXIV7O7NMY2uq/",
+      "permanent": false
+    },
+    {
+      "source": "/yt",
+      "destination": "https://whop.com/checkout/ch_zHtsP7ch3472vFo/",
+      "permanent": false
+    },
+    {
+      "source": "/tg",
+      "destination": "https://whop.com/checkout/ch_SHCvsmIsFcZLK1f/",
+      "permanent": false
+    }
+  ]
+}

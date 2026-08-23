@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
+import { openCheckout } from '../lib/checkout';
 import { Sparkles, ArrowRight } from 'lucide-react';
 
 export const StickyFooterCTA: React.FC = () => {
@@ -45,7 +46,7 @@ export const StickyFooterCTA: React.FC = () => {
             <Button 
                 variant="glow" 
                 className="py-2 px-5 md:py-2.5 md:px-8 text-sm md:text-base whitespace-nowrap shrink-0 shadow-[0_0_20px_rgba(99,102,241,0.4)]"
-                onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}
+                onClick={openCheckout}
             >
                 Join Now
             </Button>

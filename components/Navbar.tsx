@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from './Button';
+import { openCheckout } from '../lib/checkout';
 
 export const Navbar: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -49,12 +50,12 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/* Desktop Button */}
-            <Button className="hidden md:flex py-2.5 px-6 text-sm h-auto bg-white text-black hover:bg-gray-200 border-none shadow-[0_0_20px_-5px_rgba(255,255,255,0.4)] rounded-full font-bold tracking-tight shrink-0" onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
+            <Button className="hidden md:flex py-2.5 px-6 text-sm h-auto bg-white text-black hover:bg-gray-200 border-none shadow-[0_0_20px_-5px_rgba(255,255,255,0.4)] rounded-full font-bold tracking-tight shrink-0" onClick={openCheckout}>
                 Join Now
             </Button>
             
             {/* Mobile Join Button */}
-            <Button className="md:hidden py-2 px-5 text-xs h-auto bg-white text-black rounded-full font-bold shrink-0" onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
+            <Button className="md:hidden py-2 px-5 text-xs h-auto bg-white text-black rounded-full font-bold shrink-0" onClick={openCheckout}>
                 Join
             </Button>
         </nav>

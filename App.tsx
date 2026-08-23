@@ -7,6 +7,7 @@ import { Curriculum } from './components/Curriculum';
 import { Showcase } from './components/Showcase';
 import { FAQ } from './components/FAQ';
 import { StickyFooterCTA } from './components/StickyFooterCTA';
+import { openCheckout } from './lib/checkout';
 import { ShieldCheck, Check, Search, TrendingUp, AlertTriangle, Zap, Lock, DollarSign, Users, BarChart3, Clock, ArrowRight, Star, Repeat, Flame, BookOpen } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -38,7 +39,7 @@ const App: React.FC = () => {
                        It Can Do The Same For You Too.
                     </p>
 
-                    <Button onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')} className="mb-10">
+                    <Button onClick={openCheckout} className="mb-10">
                        Access The System
                     </Button>
 
@@ -154,7 +155,7 @@ const App: React.FC = () => {
                         There's no point in generating high-quality clips if you don't have a way to cash them in. So I reverse-engineered the market to find the <span className="text-white font-bold">exact pathways</span> where this skill converts directly into revenue:
                      </p>
 
-                     <Button onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
+                     <Button onClick={openCheckout}>
                         Access The System
                      </Button>
                  </div>
@@ -675,7 +676,7 @@ const App: React.FC = () => {
                                  </div>
                                  <span className="block text-gray-500 line-through font-serif text-xl mb-1">$997</span>
                                  <span className="block text-6xl font-serif text-white mb-6">$247</span>
-                                 <Button fullWidth variant="primary" onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
+                                 <Button fullWidth variant="primary" onClick={openCheckout}>
                                      Get Instant Access
                                  </Button>
                                  <div className="mt-4 flex justify-center items-center gap-2 text-xs text-gray-500">

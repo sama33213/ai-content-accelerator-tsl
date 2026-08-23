@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from './Button';
+import { openCheckout } from '../lib/checkout';
 
 const CARDS = [
   {
@@ -109,7 +110,7 @@ export const Hero: React.FC = () => {
               <Button onClick={() => document.getElementById('manifesto')?.scrollIntoView({behavior: 'smooth'})} className="px-10 py-4 text-lg">
                 Read The Manifesto
               </Button>
-              <Button variant="secondary" className="px-8 py-4 text-lg" onClick={() => window.open('https://whop.com/checkout/plan_UdTwlBztca303', '_blank')}>
+              <Button variant="secondary" className="px-8 py-4 text-lg" onClick={openCheckout}>
                 Access The System
               </Button>
             </div>
